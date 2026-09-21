@@ -11,6 +11,18 @@ body {
     color:#F7C544;
 }
 
+h3 {
+    font-size:15px;
+}
+
+h2 {
+    font-size:20px;
+}
+
+.t2 {
+    font-size:20px;
+}
+
 /*HEADER*/
 
 my-header {
@@ -160,6 +172,9 @@ my-footer {
 footer {
     width: 100%;
     padding: 50px 40px;
+    height: 700px;
+    display: flex;
+    flex-direction: ;
 }
 
 .org-horizontal {
@@ -180,10 +195,17 @@ footer {
     margin-bottom: 15px;
 }
 
-footer ul {
+my-footer ul {
     list-style: none;
+    font: size 1px;
 }
 
-footer li {
+
+my-footer li {
     margin-bottom: 8px;
+    font: size 1px;
+}
+
+my-footer a {
+    font: size 1px;
 }

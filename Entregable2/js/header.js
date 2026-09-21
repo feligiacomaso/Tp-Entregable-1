@@ -3,7 +3,7 @@ class Header extends HTMLElement{
         this.innerHTML =`
         <header>
 
-            <!--Boton hamburghuesa-->
+            <!-- Boton hamburghuesa -->
             <button class="hamburger-menu"
             aria-label="Abrir menú de navegación"
             aria-expanded="false"
@@ -11,7 +11,7 @@ class Header extends HTMLElement{
             &#9776;
             </button>
 
-            <!--Menu nav-->
+            <!-- Menu nav -->
             <nav id="main-nav">
                 <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -34,12 +34,12 @@ class Header extends HTMLElement{
                 </ul>
             </nav>
 
-            <!--Logo imagen-->
+            <!-- Logo imagen -->
             <img src="logo imagen">
 
-            <!--Barra de busqueda-->
+            <!-- Barra de busqueda -->
 
-            <!--Perfil, foto -> link a perfil.html-->
+            <!-- Perfil, foto -> link a perfil.html -->
 
         </header>
         `;
