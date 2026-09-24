@@ -11,41 +11,45 @@
 </head>
 
 <body>
-
+    <div id="loading-screen">
+        <div class="loading-circle">
+            <span id="loading-percent">0%</span>
+        </div>
+        <p>Cargando...</p>
+        <div class="loading-dots">● ● ● ● ●</div>
+    </div>
     <!-- Header -->
     <my-header></my-header>
 
     <main>
 
-        <!-- Carrusel de juegos destacados -->
+        <!-- Carrusel GRANDE de juegos destacados -->
         <section class="featured-games">
 
-            <h1>Juegos destacados</h1>
+            <div class="carousel-banner">
 
-            <div class="carousel">
-
-                <article class="game-card">
+                <article class="big-game-card">
                     <img src="img/peg-solitaire.jpg" alt="Peg Solitaire">
-                    <div class="game-info">
-                        <h2>PEG SOLITAIRE</h2>
+                    <div class="big-game-info">
+                        <p class="t3">PEG SOLITAIRE</p>
                         <p>Un clásico juego de estrategia y lógica.</p>
                         <a href="peg-solitaire.html">Jugar</a>
                     </div>
                 </article>
 
-                <article class="game-card">
+                <article class="big-game-card">
                     <img src="img/juego-2.jpg" alt="Nombre del juego">
-                    <div class="game-info">
-                        <h2>NOMBRE DEL JUEGO</h2>
+                    <div class="big-game-info">
+                        <p class="t3">PEG SOLITAIRE</p>
                         <p>Descripción breve del juego.</p>
                         <a href="#">Jugar</a>
                     </div>
                 </article>
 
-                <article class="game-card">
+                <article class="big-game-card">
                     <img src="img/juego-3.jpg" alt="Nombre del juego">
-                    <div class="game-info">
-                        <h2>NOMBRE DEL JUEGO</h2>
+                    <div class="big-game-info">
+                        <p class="t3">PEG SOLITAIRE</p>
                         <p>Descripción breve del juego.</p>
                         <a href="#">Jugar</a>
                     </div>
@@ -70,7 +74,7 @@
 
             <h2>Juegos populares</h2>
 
-            <div class="games-grid">
+            <div class="carrusel">
 
                 <article class="game-card">
                     <img src="img/juego.jpg" alt="Nombre del juego">
@@ -101,40 +105,7 @@
         </section>
 
 
-        <!-- Nuevos lanzamientos -->
-        <section class="new-games">
-
-            <h2>Nuevos lanzamientos</h2>
-
-            <div class="games-grid">
-
-                <article class="game-card">
-                    <img src="img/juego.jpg" alt="Nombre del juego">
-                    <h3>Nombre del juego</h3>
-                    <a href="#">Jugar</a>
-                </article>
-
-                <article class="game-card">
-                    <img src="img/juego.jpg" alt="Nombre del juego">
-                    <h3>Nombre del juego</h3>
-                    <a href="#">Jugar</a>
-                </article>
-
-                <article class="game-card">
-                    <img src="img/juego.jpg" alt="Nombre del juego">
-                    <h3>Nombre del juego</h3>
-                    <a href="#">Jugar</a>
-                </article>
-
-                <article class="game-card">
-                    <img src="img/juego.jpg" alt="Nombre del juego">
-                    <h3>Nombre del juego</h3>
-                    <a href="#">Jugar</a>
-                </article>
-
-            </div>
-
-        </section>
+        
 
     </main>
 

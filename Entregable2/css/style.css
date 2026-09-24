@@ -1,3 +1,12 @@
+/*Colores:
+#F7C544 Amarillo base
+#181B1D Fondo base
+#8A38F5 Violeta base
+#B886F9 Violeta +2
+*/
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -19,9 +28,14 @@ h2 {
     font-size:20px;
 }
 
+.t1 {
+    font-size:25px;
+}
+
 .t2 {
     font-size:20px;
 }
+
 
 /*HEADER*/
 
@@ -95,117 +109,122 @@ section h2 {
 
 /* CARRUSEL*/
 
-.carousel {
+.carousel-banner {
     width: 100%;
-
     display: flex;
     gap: 20px;
-
     overflow: hidden;
 }
-
-
 /* CARDS */
-
-.game-card {
+.big-game-card {
     flex: 0 0 300px;
-
     display: flex;
     flex-direction: column;
-
     overflow: hidden;
 }
-
-.game-card img {
+.big-game-card img {
     width: 100%;
     height: 200px;
-
     object-fit: cover;
 }
-
 .game-info {
     padding: 20px;
 }
-
 .game-info h2 {
     margin-bottom: 10px;
 }
-
 .game-info p {
     margin-bottom: 20px;
 }
 
 
 /* GRILLAS DE JUEGOS */
-
 .games-grid {
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 25px;
 }
-
 .games-grid .game-card {
     width: 100%;
 }
-
-
 /* BOTONES DEL CARRUSEL */
-
 .carousel-prev,
 .carousel-next {
     position: absolute;
-
     width: 40px;
     height: 40px;
 }
-
-
 /* FOOTER*/
-
 my-footer {
     display: block;
     width: 100%;
 }
-
 footer {
     width: 100%;
     padding: 50px 40px;
     height: 700px;
     display: flex;
-    flex-direction: ;
+    /*flex-direction: ;*/
 }
-
 .org-horizontal {
     max-width: 1200px;
     margin: 0 auto;
-
     display: flex;
     justify-content: space-between;
     gap: 40px;
 }
-
 .org-horizontal > div {
     flex: 1;
 }
-
 .t2 {
     font-weight: bold;
     margin-bottom: 15px;
 }
-
 my-footer ul {
     list-style: none;
     font: size 1px;
 }
-
-
 my-footer li {
     margin-bottom: 8px;
     font: size 1px;
 }
-
 my-footer a {
     font: size 1px;
+}
+#loading-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #102521;
+    color: #fff;
+}
+
+.loading-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: conic-gradient(#F7C544 0%, #263b36 0%);
+}
+.loading-circle::before {
+    content: "";
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    background: #102521;
+}
+#loading-percent {
+    z-index: 1;
+    font-size: 24px;
+    font-weight: bold;
+}
+.loading-dots {
+    color: #F7C544;
+    letter-spacing: 3px;
 }

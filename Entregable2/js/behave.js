@@ -11,7 +11,7 @@ document.addEventListener( 'DOMContentLoaded' , () => {
     mainNav.classList.toggle( 'nav-open' ) ; // Alterna la clase 'nav-open'
   } ) ;
 
-  // Cierra el menú si se hace clic fuera de él en dispositivos móviles
+  // Cierra el menu si se hace clic fuera de el en dispositivos moviles
   document.addEventListener( 'click' , (event) => {
     if( !mainNav.contains( event.target ) &&
         !hamburgerButton.contains( event.target ) &&
@@ -20,5 +20,25 @@ document.addEventListener( 'DOMContentLoaded' , () => {
       mainNav.classList.remove( 'nav-open' ) ;
     }
   } ) ;
+  
+  
+    const pantallaCarga = document.getElementById('loading-screen');
+    const porcentaje = document.getElementById('loading-percent');
+    const circulo = document.querySelector('.loading-circle');
+
+    let progreso = 0;
+
+    const carga = setInterval(() => {
+        progreso++;
+        porcentaje.textContent = `${progreso}%`;
+        circulo.style.background =
+            `conic-gradient(#F7C544 ${progreso}%, #263b36 ${progreso}%)`;
+
+        if (progreso === 100) {
+            clearInterval(carga);
+            pantallaCarga.remove();
+        }
+    }, 50);
 } ) ;
+
 
